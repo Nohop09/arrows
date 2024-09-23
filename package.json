@@ -59,7 +59,7 @@
       "react/jsx-no-target-blank": "off"
     }
   },
-  "prettier": "prettier-config-nick",
+  
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "npx prettier --write",

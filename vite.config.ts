@@ -13,4 +13,14 @@ export default defineConfig({
     setupFiles: "src/setupTests",
     mockReset: true,
   },
+  build: {
+    outDir: "./dist",
+    rollupOptions: {
+      output: {
+        entryFileNames: "index.js",
+        chunkFileNames: "[name].js",
+        assetFileNames: "[name].[ext]",
+      },
+    },
+  },
 })
